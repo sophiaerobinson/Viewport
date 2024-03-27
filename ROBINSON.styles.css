@@ -192,6 +192,11 @@ table {
 /* --------------- BEGIN USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 
 /* CHANGE THE BODY'S BACKGROUND COLOR TO THE DARK GRAY IF THE USER PREFERS DARK MODE */
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: var(--dark-gray); 
+      color: #ffffff; 
+
 
 /* --------------- END USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 
@@ -339,7 +344,7 @@ img {
 
 /* ---------- SMALL SCREEN STYLES ---------- */
 /* --------------- BEGIN SMALL SCREEN SIZES --------------- */
-/* header, footer{
+header, footer{
         background-color: var(--lime-green);
         color: var(--dark-gray);
     }
@@ -371,7 +376,7 @@ img {
 
 /* ---------- MEDIUM SCREEN STYLES ---------- */
 /* --------------- BEGIN MEDIUM SCREEN SIZES --------------- */
-/* header, footer{
+header, footer{
         background-color: var(--black);
         color: var(--white);
     }   
@@ -403,7 +408,7 @@ img {
 
 /* ---------- LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN LARGE SCREEN SIZES --------------- */
-/* header, footer{
+header, footer{
         background-color: var(--lime-green);
         color: var(--dark-gray);
     }
@@ -441,7 +446,7 @@ img {
 
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
-/* img{
+img{
         width: 300px;
         max-width: 300px;
     } */
@@ -451,7 +456,7 @@ img {
 
 /* ---------- EXTRA LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN EXTRA LARGE SCREEN SIZES --------------- */
-/* header, footer{
+header, footer{
         background-color: var(--orange);
         padding-left: 5%;
     }
@@ -518,3 +523,16 @@ img {
         padding-top: 2em;
     } */
 /* --------------- END EXTRA LARGE SCREEN SIZES --------------- */
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
